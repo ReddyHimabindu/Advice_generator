@@ -1,0 +1,113 @@
+body {
+    font-family: 'Manrope';
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.adv-card {
+    background-color: hsl(217, 19%, 24%);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 463px;
+    position: relative;
+}
+
+.adv-number {
+    color: hsl(150, 100%, 66%);
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.advice {
+    font-size: 28px;
+    font-weight: 800;
+    color: hsl(193, 38%, 86%);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0;
+    position: relative;
+}
+
+
+.dice-container {
+    background-color: hsl(150, 100%, 66%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;  
+    bottom: -30px;        
+    left: 50%;            
+    transform: translateX(-50%);
+}
+
+.dice-container:hover {
+    background-color: hsl(150, 100%, 66%);
+    box-shadow: 0 0 15px hsl(150, 100%, 66%);
+}
+
+.dice-container svg {
+    width: 24px;
+    height: 24px;
+}
+.desktop-svg{
+    display: block;
+}
+.mobile-svg{
+    display: none;
+}
+
+
+@media (max-width: 375px) {
+    .adv-card {
+        padding: 1rem;
+        width: 324px;
+        max-width: 375px;
+    }
+
+    .adv-number {
+        font-size: 14px; 
+    }
+
+    .advice {
+        font-size: 28px; 
+    }
+
+    .divider {
+        margin: 18px 0;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .desktop-svg{
+        display: none;
+    }
+
+    .mobile-svg{
+        display: block;
+        padding: 0px 0px 23px 0px;
+    }
+
+    .dice-container {
+        width: 50px; 
+        height: 50px;
+        bottom: -25px;
+    }
+
+    .dice-container svg {
+        width: 24px; 
+        height: 24px;
+    }
+}
